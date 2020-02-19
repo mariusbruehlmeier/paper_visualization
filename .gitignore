@@ -1,0 +1,7 @@
+build/
+devel/
+logs/
+*.bag
+*.MP4
+*.vscode
+*.catkin_tools
