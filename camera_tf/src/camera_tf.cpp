@@ -15,9 +15,9 @@ int main(int argc, char** argv) {
       listener.lookupTransform("vehicle", "mrh_lidar", ros::Time(0), transform);
       static tf::TransformBroadcaster br_1;
       tf::Transform transform_1;
-      transform_1.setOrigin(tf::Vector3(-.05, -.1, .05));
+      transform_1.setOrigin(tf::Vector3(-.05, -.1, .20));
       tf::Quaternion q_1;
-      q_1.setRPY(0, 0.28, .078);
+      q_1.setRPY(0, 0.397, .084);
       transform_1.setRotation(q_1);
       br_1.sendTransform(tf::StampedTransform(transform_1, ros::Time::now(),
                                               "mrh_lidar", "gopro"));

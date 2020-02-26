@@ -4,7 +4,7 @@ camera_name: "gopro"
 camera_matrix:
   rows: 3
   cols: 3
-  data: [800.0, 0.0, 959.5, 0.0, 0.0, 970.0, 539.5, 0.0, 0.0, 0.0, 1.0, 0.0]
+  data: [1020.0, 0.0, 959.5, 0.0, 0.0, 1020.0, 539.5, 0.0, 0.0, 0.0, 1.0, 0.0]
 distortion_model: none
 distortion_coefficients:
   rows: 1
@@ -17,4 +17,4 @@ rectification_matrix:
 projection_matrix:
   rows: 3
   cols: 4
-  data: [800, 0.0, 959.5, 0.0, 0.0, 970.0, 539.5, 0.0, 0.0, 0.0, 1.0, 0.0]
+  data: [1020, 0.0, 959.5, 0.0, 0.0, 1020.0, 539.5, 0.0, 0.0, 0.0, 1.0, 0.0]

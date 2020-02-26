@@ -4,16 +4,16 @@
       <!-- node name and ros graph name -->
       <arg name="camera_name" value="gopro" />
 
-      <arg name="video_stream_provider" value="/home/marius/paper_ws/src/video_stream_opencv/GOPR0008.MP4" />
+      <arg name="video_stream_provider" value="/home/marius/paper_ws/src/video_stream_opencv/GH018777.MP4" />
       <!-- setting frame_id -->
       <arg name="frame_id" value="gopro_camera" />
       <!-- throttling the publishing of frames to -->
       <arg name="fps" value="30" />
-      <arg name="start_frame" value="1995" />
+      <arg name="start_frame" value="2315" />
       <!-- camera info loading, take care as it needs the "file:///" at the start , e.g.:
         "file:///$(find your_camera_package)/config/your_camera.yaml" -->
       <arg name="camera_info_url" value="file:///$(find video_stream_opencv)/config/test_calibration.yaml" />
    </include>
-   <node pkg="rosbag" type="play" name="rosbag" args="/home/marius/paper_ws/src/video_stream_opencv/trackdrive.bag -d 2 -s 105 -r 0.5"/>
+   <node pkg="rosbag" type="play" name="rosbag" args="/home/marius/paper_ws/src/video_stream_opencv/trackdrive_2.bag -d 2 -s 93 -r 0.5"/>
    <node name="tf" type="camera_tf" pkg="camera_tf" output="screen"/>
 </launch>
